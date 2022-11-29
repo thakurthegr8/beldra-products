@@ -1,3 +1,10 @@
+*{
+  box-sizing: border-box;
+}
+:root{
+  --pl:25%;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -11,3 +18,81 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+#Sidebar{
+  width: var(--pl);;
+}
+.linkSidebar{
+  width: var(--pl);;
+}
+.no-scroll::-webkit-scrollbar{
+  display: none;
+  
+}
+
+.mask{
+  -webkit-mask-image: linear-gradient(to right, transparent, black 20px, black 90%, transparent);
+}
+
+@media screen and (min-width:768px){
+  #Sidebar{
+    display: block;
+  }
+  .linkSidebar{
+    display: block;
+  }
+  #main{
+    padding-left: var(--pl);
+    min-height: 100vh;
+  }
+  #products{
+    padding-left: var(--pl);
+    min-height: 100vh;
+  }
+}
+#infrastructure{
+  padding-left: var(--pl);
+  min-height: 100vh;
+}
+.infrastructureDesc{
+  padding-left: var(--pl);
+  min-height: 100vh;
+}
+.productDesc{
+  padding-left: var(--pl);
+  min-height: 100vh;
+}
+#References{
+  padding-left: var(--pl);
+  min-height: 100vh;
+}
+.linkSidebar{
+  width: 25%;
+}
+@media screen and (max-width:768px){
+  #Sidebar{
+    display: none; 
+  }
+  .linkSidebar{
+    display: none; 
+  }
+  #main{
+    padding-left: 0%;
+  }
+  #products{
+    padding-left: 0%;
+  }
+  #infrastructure{
+    padding-left: 0%;
+  }
+  #References{
+    padding-left: 0%;
+  }
+  .infrastructureDesc{
+    padding-left: 0;
+  }
+  .productDesc{
+    padding-left: 0;
+  }
+}
+
+
